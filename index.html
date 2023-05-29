@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <style>
+    model-viewer {
+      width: 100dvw;
+      height: 100dvh;
+    }
+  </style>
+  <body style="margin: 0px; overflow: hidden; background-color: #e3e3e3;">
+    <model-viewer
+      src="./src/assets/grandmas_tv.glb"
+      ios-src="./src/assets/Grandmas_TV.usdz"
+      ar
+      alt="modelo 3D"
+      camera-controls
+      touch-action="pan-y"
+      autoplay="true"
+      scale="0.01 0.01 0.01"
+      shadow-intensity="1"
+      orientation="0deg -5deg 180deg"
+    >
+    </model-viewer>
+
+    <!-- <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script> -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
